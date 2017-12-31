@@ -1,0 +1,17 @@
+
+    <div class="view">
+      <div ng-if="x.name">
+        <div class="card">
+          <div class="card-header">
+            <div class="fa fa-user"></div>
+            {{x.name}}
+            <div class="fa fa-user"></div>
+          </div>
+          <div class="card-body" id="c">
+            Gender : {{x.gender}}<br>
+            <span ng-if="x.aliases[0]">Aliases : {{x.aliases[0]}}</span><br><br>
+            <a ng-href='#/characters/{{ x.url.split("/").pop() }}'><button type="button" name="button" id="btn1">Details</button></a>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,85 @@
+/* FOR NAVIGATION BAR */
+.navbar{
+  margin-bottom: 16%;
+}
+
+/* FOR GAME OF THRONES LOGO */
+.navbar-brand {
+transform: translateX(-50%);
+left: 50%;
+position: absolute;
+}
+
+#logo{
+margin-top: -4vw;
+width: 90vw;
+}
+
+/* FOR BODY */
+body {
+background-image: url(../img/house.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+
+/* FOR CARDS */
+.card{
+text-align: center;
+margin: 15px;
+opacity: 0.8;
+}
+
+.card-header{
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.card-body{
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+
+/* FOR FONT SIZE OF main-view */
+.view{
+  font-size: 1.5vmax;
+}
+
+/* FOR CARD-BODY OF books-detailed-view */
+#b{
+  background-color: #AD9069;
+}
+
+/* FOR CARD-BODY OF houses-detailed-view */
+#h{
+  background: linear-gradient(#6A7F82, #2E3D40);
+}
+
+/* FOR CARD-BODY OF characters-detailed-view */
+#c{
+  background-color: #293839;
+}
+
+/* FOR CARD-HEADS OF DETAILED VIEWS */
+h2{
+  font-size: 4vw !important;
+}
+
+/* FOR CARD-BODIES OF DETAILED VIEWS */
+h3{
+  font-size: 3vw !important;
+}
+
+/* FOR main-view BUTTON */
+#btn1{
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+/* FOR detailed-view BUTTON */
+#btn2{
+  font-size: 3vw;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  border-radius: 20px;
+}

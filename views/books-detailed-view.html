@@ -1,0 +1,18 @@
+
+    <div class="card" >
+        <div class="card-header">
+          <h2><b><span class="fa fa-book"></span> {{booksCtrl.books.name}} <span class="fa fa-book"></span></b> </h2>
+        </div>
+
+        <div class="card-body" id="b">
+          <h3 ng-if="booksCtrl.books.isbn">ISBN : {{booksCtrl.books.isbn}}<br></h3>
+          <h3 ng-if="booksCtrl.books.numberOfPages">No. of Pages : {{booksCtrl.books.numberOfPages}}<br></h3>
+          <h3 ng-if="booksCtrl.books.publisher">Publisher : {{booksCtrl.books.publisher}}<br></h3>
+          <h3 ng-if="booksCtrl.books.authors[0]">Authors : {{booksCtrl.books.authors}}<br></h3>
+          <h3 ng-if="booksCtrl.books.country">Country : {{booksCtrl.books.country}}<br></h3>
+          <h3 ng-if="booksCtrl.books.mediaType">Media Type : {{booksCtrl.books.mediaType}}<br></h3>
+          <h3 ng-if="booksCtrl.books.released">Released : {{booksCtrl.books.released | date:'medium'}}<br></h3>
+
+          <a ng-href='#/'><button type="button" name="button" id="btn2">Home</button></a>
+        </div>
+    </div>

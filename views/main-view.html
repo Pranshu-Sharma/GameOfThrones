@@ -1,0 +1,62 @@
+<div class="container">
+
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-5">
+                <select class="form-control " ng-model="check">
+                  <option value=0 ng-selected="true">Select the data to load</option>
+                  <option value=1>Load All</option>
+                  <option value=2>Load Books</option>
+                  <option value=3>Load Houses</option>
+                  <option value=4>Load Characters</option>
+                </select>
+              </div>
+              <div class="col-md-4 offset-3" >
+                <input type="text" ng-model="search.name" class="form-control" placeholder="Search the items">
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-md-3">
+                <select class="form-control" ng-model="sortorder">
+                  <option value="" ng-selected="true">Sort the data</option>
+                  <option value="name" >Ascending</option>
+                  <option value="-name">Descending</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+        <div ng-if="check == 1">
+          <span ng-controller="mainController as mainCtrl">
+            <div class="white" ng-repeat="x in mainCtrl.arr | filter:search | orderBy:sortorder">
+              <books-directive class="" ng-if="x.isbn "></books-directive>
+              <characters-directive class="" ng-if="x.gender"></characters-directive>
+              <houses-directive class="" ng-if="x.region"></houses-directive>
+            </div>
+          </span>
+        </div>
+        <div ng-if="check == 2">
+          <span ng-controller="booksController as mainCtrl">
+            <div ng-repeat="x in mainCtrl.arr | filter:search | orderBy:sortorder">
+              <books-directive ng-if="x.isbn"></books-directive>
+            </div>
+          </span>
+        </div>
+        <div ng-if="check == 3">
+          <span ng-controller="housesController as mainCtrl">
+            <div class="white" ng-repeat="x in mainCtrl.arr | filter:search | orderBy:sortorder">
+              <houses-directive ng-if="x.region"></houses-directive>
+            </div>
+          </span>
+        </div>
+        <div ng-if="check == 4">
+          <span ng-controller="charactersController as mainCtrl">
+            <div class="white" ng-repeat="x in mainCtrl.arr | filter:search | orderBy:sortorder">
+              <characters-directive ng-if="x.gender"></characters-directive>
+            </div>
+          </span>
+        </div>
+</div>

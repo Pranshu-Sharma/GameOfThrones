@@ -1,0 +1,20 @@
+
+
+    <div class="card">
+      <div class="card-header">
+        <h2><b><span class="fa fa-user"></span> {{charactersCtrl.characters.name}} <span class="fa fa-user"></span></b> </h2>
+      </div>
+
+      <div class="card-body" id="c">
+        <h3 ng-if="charactersCtrl.characters.gender">Gender : {{charactersCtrl.characters.gender}}<br></h3>
+        <h3 ng-if="charactersCtrl.characters.born">Born : {{charactersCtrl.characters.born}}<br></h3>
+        <h3 ng-if="charactersCtrl.characters.died">Died : {{charactersCtrl.characters.died}}<br></h3>
+        <h3 ng-if="charactersCtrl.characters.aliases[0]">Aliases : {{charactersCtrl.characters.aliases}}<br></h3>
+        <h3 ng-if="charactersCtrl.characters.culture">Culture : {{charactersCtrl.characters.culture}}<br></h3>
+        <h3 ng-if="charactersCtrl.characters.playedBy[0]">Played By : {{charactersCtrl.characters.playedBy}}<br></h3>
+        <h3 ng-if="charactersCtrl.characters.titles[0]">Titles : {{charactersCtrl.characters.titles}}<br></h3>
+        <h3 ng-if="charactersCtrl.characters.tvSeries[0]">TV Series : {{charactersCtrl.characters.tvSeries}}<br></h3>
+
+        <a ng-href='#/'><button type="button" name="button" id="btn2">Home</button></a>
+      </div>
+    </div>

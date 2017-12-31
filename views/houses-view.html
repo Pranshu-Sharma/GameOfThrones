@@ -1,0 +1,14 @@
+
+    <div class="view">
+      <div class="card">
+        <div class="card-header">
+          <div class="fa fa-bookmark"></div>
+          {{x.name}}
+          <div class="fa fa-bookmark"></div>
+        </div>
+        <div class="card-body" id="h">
+          Region : {{x.region}}<br><br>
+          <a ng-href='#/houses/{{ x.url.split("/").pop() }}'><button type="button" name="button" id="btn1">Details</button></a>
+        </div>
+      </div>
+    </div>

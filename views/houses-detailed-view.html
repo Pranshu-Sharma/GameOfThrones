@@ -1,0 +1,16 @@
+
+    <div class="card">
+      <div class="card-header">
+        <h2><b><span class="fa fa-bookmark"></span> {{housesCtrl.houses.name}} <span class="fa fa-bookmark"></span></b></h2>
+      </div>
+
+      <div class="card-body" id="h">
+        <h3 ng-if="housesCtrl.houses.region">Region : {{housesCtrl.houses.region}}<br></h3>
+        <h3 ng-if="housesCtrl.houses.founded">Founded : {{housesCtrl.houses.founded}}<br></h3>
+        <h3 ng-if="housesCtrl.houses.coatOfArms">Coat Of Arms : {{housesCtrl.houses.coatOfArms}}<br></h3>
+        <h3 ng-if="housesCtrl.houses.words">Words : {{housesCtrl.houses.words}}<br></h3>
+        <h3 ng-if="housesCtrl.houses.seats[0]">Seats : {{housesCtrl.houses.seats}}<br></h3>
+
+        <a ng-href='#/'><button type="button" name="button" id="btn2">Home</button></a>
+      </div>
+    </div>

@@ -1,0 +1,15 @@
+
+  <div class="view">
+    <div class="card">
+      <div class="card-header">
+        <div class="fa fa-book"></div>
+        {{x.name}}
+        <div class="fa fa-book"></div>
+      </div>
+      <div class="card-body" id="b">
+        ISBN : {{x.isbn}}<br>
+        No. of Pages : {{x.numberOfPages}}<br><br>
+        <a ng-href='#/books/{{ x.url.split("/").pop() }}'><button type="button" name="button" id="btn1">Details</button></a>
+      </div>
+    </div>
+  </div>
